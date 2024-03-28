@@ -31,9 +31,9 @@
           <span class="indent-3"> See How we Work</span>
         </a>
       </div>
-      <div class="hidden lg:mt-25 lg:col-span-5 lg:flex">
+      <div class="lg:mt-15 lg:col-span-5 lg:flex">
         <img
-          class="h-auto w-auto bg-cyan-200"
+          class="-mt-20"
           src="../../assets/images/2doctors-removebg-preview.png"
           alt="doctors"
         />
@@ -43,9 +43,9 @@
 
   <!-- DateSection Book Now -->
 
-  <section>
+  <section class="-mt-12 bg-white mx-12 ">
     <div class="flex md:flex-row rounded-md shadow-xl p-5 -left-4 -top-4">
-      <div class="flex">
+      <div class="md:w-4/12 inline-flex">
         <a href="">
           <svg
             class="h-8 w-10 fill-blue-500"
@@ -62,7 +62,7 @@
           </div>
         </a>
       </div>
-      <div class="flex">
+      <div class="md:w-4/12 inline-flex">
         <a href="">
           <svg
             class="h-8 w-10 fill-blue-500"
@@ -110,8 +110,7 @@
         </a>
       </div>
 
-      <div class="flex">
-        <a href="">
+      <div class="md:w-4/12 inline-flex">
           <svg
             class="h-8 w-10 fill-blue-500"
             xmlns="http://www.w3.org/2000/svg"
@@ -121,10 +120,72 @@
               d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
             />
           </svg>
-          <p class="ml-16 truncate text-sm font-medium text-gray-900">Location</p>
-          <p class="ml-16 truncate text-sm font-medium text-gray-800">New York, US</p>
-        </a>
+          <h3 class="ml-10 truncate text-sm font-medium text-gray-900">Location</h3>
+          <br />
+          <p class="ml-10 truncate text-sm font-medium text-gray-800">New York, US</p>  
+      </div>
+
+      <div class = "md:w-2/12">
+        <button class=" rounded-lg p-2 outline outline-offset-2 outline-2 outline-cyan-500 ...">
+          Book Now
+        </button>
       </div>
     </div>
+  </section> 
+
+
+
+
+  <!-- //About Us -->
+
+  <section class="pb-6  mt-5 m pt-10">
+        <div class="container mx-auto px-6">
+          <h2 class="text-center justify-center uppercase text-2xl mb-10 font-bold">Our Values</h2>
+          <div class="flex flex-wrap">
+            <div class="lg:pt-12 pt-8 w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Awarded Agency</h6>
+                  <p class="mt-12 mb-14 text-blueGray-500">
+                    Divide details about your product or agency work into parts.
+                    A paragraph describing a feature will be enough.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
+                    <i class="fas fa-retweet"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Free Revisions</h6>
+                  <p class="mt-12 mb-14  text-blueGray-500">
+                    Keep you user engaged by providing meaningful information.
+                    Remember that by this time, the user is curious.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
+                    <i class="fas fa-fingerprint"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Verified Company</h6>
+                  <p class="mt-12 mb-14  text-blueGray-500">
+                    Write a few lines about each one. A paragraph describing a
+                    feature will be enough. Keep you user engaged!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
   </section>
+
 </template>
