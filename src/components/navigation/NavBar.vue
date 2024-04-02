@@ -1,26 +1,22 @@
 <template>
   
-  <section class="bg-cyan-200 ">
+  <section class="bg-sky-200 ">
   <nav
-    class="flex items-center justify-between flex-wrap bg-cyan-200  py-4 lg:px-12 shadow   "
+    class="flex items-center justify-between flex-wrap bg-sky-200  py-4 lg:px-12 shadow   "
   >
     <div
       class="flex justify-between lg:w-auto w-full lg:border-b-0 pl-6 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0"
     >
       <div class="flex items-center flex-shrink-0 text-gray-800 mr-16">
         <a class="text-3xl font-bold leading-none" href="#">
-          <svg
-            class="h-8 mr-3"
-            alt="logo"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-          >
-            <path
-              d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0z"
-            />
+          <svg 
+          class="h-8  mr-1 fill-blue-900"
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 512 512"> 
+            <path d="M96 352V96c0-35.3 28.7-64 64-64H416c35.3 0 64 28.7 64 64V293.5c0 17-6.7 33.3-18.7 45.3l-58.5 58.5c-12 12-28.3 18.7-45.3 18.7H160c-35.3 0-64-28.7-64-64zM272 128c-8.8 0-16 7.2-16 16v48H208c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h48v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V256h48c8.8 0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H320V144c0-8.8-7.2-16-16-16H272zm24 336c13.3 0 24 10.7 24 24s-10.7 24-24 24H136C60.9 512 0 451.1 0 376V152c0-13.3 10.7-24 24-24s24 10.7 24 24l0 224c0 48.6 39.4 88 88 88H296z"/>
           </svg>
         </a>
-        <span class="text-md font-semibold text-blue-700 text-xl tracking-tight">ProHealth</span>
+        <span class="text-md font-semibold text-blue-900 text-xl tracking-tight">ProHealth</span>
       </div>
       <div class="block lg:hidden">
         <button
