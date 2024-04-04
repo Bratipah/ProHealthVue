@@ -35,32 +35,32 @@
       <div class="text-md font-normal text-black-200 lg:flex-grow">
         <a
           href="#responsive-header"
-          class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue px-4 hover:font-semibold"
+          class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-900 px-4 hover:font-semibold"
         >
           About
         </a>
         <a
           href="#responsive-header"
-          class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue px-4 hover:font-semibold"
+          class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-900 px-4 hover:font-semibold"
         >
           Find Doctor
         </a>
         <a
           href="#responsive-header"
-          class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue px-4 hover:font-semibold"
+          class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-900 px-4 hover:font-semibold"
         >
           Blog
         </a>
         <a
           href="#responsive-header"
-          class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue px-4 hover:font-semibold"
+          class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-900 px-4 hover:font-semibold"
         >
           Contact
         </a>
       </div>
 <!-- Navbar end icons -->
       <div class="hidden xl:flex items-center space-x-6 items-center">
-        <a class="hover:text-gray-200" href="#">
+        <a class="hover:text-gray-200 hover:fill-blue-900" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"
@@ -76,7 +76,7 @@
             />
           </svg>
         </a>
-        <a class="flex items-center hover:text-gray-200" href="#">
+        <a class="flex items-center hover:text-gray-200 hover:fill-blue-900" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"
@@ -101,7 +101,7 @@
         <!-- Sign In / Register      -->
         <a class="flex items-center hover:text-gray-200" href="#">
           <svg
-          class="h-6 w-6 hover:text-gray-200" 
+          class="h-6 w-6 hover:text-gray-200 hover:fill-blue-900" 
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
