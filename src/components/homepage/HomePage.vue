@@ -169,7 +169,7 @@ import NavBar from '../navigation/NavBar.vue';
         <div
           class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
         >
-          <div class="px-4 py-5 flex-auto fill-white ">
+          <div class="px-4 py-5 flex-auto fill-white">
             <div
               class="p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-500"
             >
@@ -180,7 +180,7 @@ import NavBar from '../navigation/NavBar.vue';
               </svg>
             </div>
             <h6 class="text-xl font-semibold rounded-lg">Excellence</h6>
-            <p class="mt-12 mb-14 ">
+            <p class="mt-12 mb-14">
               Keep you user engaged by providing meaningful information. Remember that by this time,
               the user is curious.
             </p>
@@ -852,7 +852,146 @@ import NavBar from '../navigation/NavBar.vue';
         </div>
       </div>
     </div>
-
     <!-- Blog section -->
+
+    <!-- Book An Appoitment section -->
+    <div class="lg:flex items-center space-x-16 mt-20 mx-10">
+      <div class="md:w-6/12 mx-10">
+        <h2 class="text-xl mb-2 mt-5 font-bold text-blue-500">BOOK AN</h2>
+        <h2 class="text-4xl mb-5 font-bold text-sky-950">Appointment</h2>
+
+        <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
+          <div class="w-full flex flex-col mb-3">
+            <label class="font-semibold text-gray-600 py-2">Name</label>
+            <input
+              placeholder="David John"
+              class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4"
+              type="text"
+              name="integration[name]"
+              id="integration_name"
+            />
+          </div>
+          <div class="w-full flex flex-col mb-3">
+            <label class="font-semibold text-gray-600 py-2">Phone Number</label>
+            <input
+              placeholder="(123) 456-789"
+              class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4"
+              type="text"
+              name="integration[phone-number]"
+              id="integration_phone_number"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col mb-3 text-xs">
+          <label for="email" class="font-semibold text-gray-600 py-2">Medical Record</label>
+          <input
+            type="number"
+            name="number"
+            id="medicalRecord"
+            class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4"
+            placeholder="123456-7890-0987"
+          />
+        </div>
+
+        <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
+          <div class="w-full flex flex-col mb-3">
+            <label class="font-semibold text-gray-600 py-2">Preffered Date</label>
+            <input
+              placeholder="August 24,2023"
+              class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4"
+              type="date"
+              name="integration[date]"
+              id="integration_date"
+            />
+          </div>
+          <div class="w-full flex flex-col mb-3">
+            <label class="font-semibold text-gray-600 py-2">Time</label>
+            <input
+              placeholder="3.30PM"
+              class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4"
+              type="time"
+              name="integration[time]"
+              id="integration_time"
+            />
+          </div>
+        </div>
+
+        <div class="flex items-center mt-3">
+          <input
+            type="checkbox"
+            name="remember_me"
+            id="remember_me"
+            class="mr-2 focus:ring-0 rounded"
+          />
+          <label for="remember_me" class="text-gray-700"
+            >I accept the
+            <a href="#" class="text-blue-600 hover:text-blue-700 hover:underline">terms</a> and
+            <a href="#" class="text-blue-600 hover:text-blue-700 hover:underline"
+              >privacy policy</a
+            ></label
+          >
+        </div>
+
+        <div class="my-6 flex items-center justify-start">
+          <a
+            href="#"
+            class="inline-flex items-center justify-start px-3 py-2 mr-2 text-base font-medium bg-blue-600 hover:bg-sky-950 rounded-3xl text-center text-white hover:text-white fill-white hover:fill-white focus:ring-transparent focus:ring-blue-300"
+          >
+            <span class="indent-3 hover:transition duartion-700 ease-in-out"> Submit</span>
+            <svg class="w-10 h-10 p-2 -mr-1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="md:w-5/12 mt-20 rounded-lg">
+        <img class="rounded-lg" src="../../assets/images/doctor3.jpg" alt="" />
+      </div>
+    </div>
+    <!-- Book An Appoitment section -->
+
+    <!-- FAQ section -->
+
+    <div class="mt-40 mx-10 py-5  ">
+      <h2 class="text-xl mb-2 mt-5 font-bold text-blue-500 uppercase text-center">What People what</h2>
+      <h2 class="text-4xl mb-5 font-bold text-sky-950 text-center">Usually Asked</h2>
+
+      <div class=" py-10 items-center w-1/2">
+        <p
+          class="outline outline-offset-2 outline-1 outline-blue-300 p-2 font-bold rounded-md transition-all duration-200"
+        >
+          Dropdown
+
+        </p>
+        <div
+          class="w-80 absolute top-5 z-10 after:content-[&quot;&quot;] after:inline-block after:absolute after:top-0 after:bg-white/40 after:w-full after:h-full after:-z-20 after:blur-[2px] after:rounded-lg peer-focus:top-12 peer-focus:opacity-100 peer-focus:visible transition-all duration-300 invisible opacity-0"
+        >
+          <ul class="py-6 px-3 flex flex-col gap-3">
+            <li class="cursor-pointer bg-sky-300 p-3 rounded-md hover:opacity-90 text-white">
+              Eat an apple a day
+            </li>
+            <li class="cursor-pointer bg-blue-300 p-3 rounded-md hover:opacity-90 text-white">
+              Eat an apple a day
+            </li>
+            <li class="cursor-pointer bg-cyan-300 p-3 rounded-md hover:opacity-90 text-white">
+              Eat an apple a day
+            </li>
+            <li class="cursor-pointer bg-red-300 p-3 rounded-md hover:opacity-90 text-white">
+              Eat an apple a day
+            </li>
+            <li class="cursor-pointer bg-yellow-300 p-3 rounded-md hover:opacity-90 text-white">
+              Eat an apple a day
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ section -->
   </section>
 </template>
