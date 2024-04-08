@@ -957,41 +957,364 @@ import NavBar from '../navigation/NavBar.vue';
 
     <!-- FAQ section -->
 
-    <div class="mt-40 mx-10 py-5  ">
-      <h2 class="text-xl mb-2 mt-5 font-bold text-blue-500 uppercase text-center">What People what</h2>
+    <div class="mt-40 grid grid-rows-5 gap-5 justify-center ">
+      <h2 class="text-xl mb-2 mt-5 font-bold text-blue-500 uppercase text-center">
+        What People what
+      </h2>
       <h2 class="text-4xl mb-5 font-bold text-sky-950 text-center">Usually Asked</h2>
 
-      <div class=" py-10 items-center w-1/2">
+      <div class="mt-10 max-w-2xl max-auto py-4 flex flex-wrap items-center justify-between mx-50  sm:mt-0 rounded-2xl border border-blue-500 shadow md:flex md:items-center md:justify-between md:p-6 bg-transparent">
         <p
-          class="outline outline-offset-2 outline-1 outline-blue-300 p-2 font-bold rounded-md transition-all duration-200"
+          class="text-sky-950"
         >
-          Dropdown
-
+          What services does ProHealth offer?
         </p>
-        <div
-          class="w-80 absolute top-5 z-10 after:content-[&quot;&quot;] after:inline-block after:absolute after:top-0 after:bg-white/40 after:w-full after:h-full after:-z-20 after:blur-[2px] after:rounded-lg peer-focus:top-12 peer-focus:opacity-100 peer-focus:visible transition-all duration-300 invisible opacity-0"
+        <a
+                href="#"
+                class="mr-4 text-sm  md:mr-6 "
+                ><svg class="rounded-full bg-transparent border border-blue-500 fill-blue-500 p-1" xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 384 512">
+                 <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+                </svg></a>
+     
+      </div>
+      <div class="mt-10 max-w-2xl max-auto py-4 flex flex-wrap items-center justify-between mx-50 sm:mt-0 rounded-2xl border border-blue-500 shadow md:flex md:items-center md:justify-between md:p-6 bg-transparent">
+        <p
+          class="text-sky-950"
         >
-          <ul class="py-6 px-3 flex flex-col gap-3">
-            <li class="cursor-pointer bg-sky-300 p-3 rounded-md hover:opacity-90 text-white">
-              Eat an apple a day
-            </li>
-            <li class="cursor-pointer bg-blue-300 p-3 rounded-md hover:opacity-90 text-white">
-              Eat an apple a day
-            </li>
-            <li class="cursor-pointer bg-cyan-300 p-3 rounded-md hover:opacity-90 text-white">
-              Eat an apple a day
-            </li>
-            <li class="cursor-pointer bg-red-300 p-3 rounded-md hover:opacity-90 text-white">
-              Eat an apple a day
-            </li>
-            <li class="cursor-pointer bg-yellow-300 p-3 rounded-md hover:opacity-90 text-white">
-              Eat an apple a day
-            </li>
-          </ul>
-        </div>
+          What services does ProHealth offer?
+        </p>
+        <a
+                href="#"
+                class="mr-4 text-sm  md:mr-6 "
+                ><svg class="rounded-full bg-transparent border border-blue-500 fill-blue-500 p-1" xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 384 512">
+                 <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+                </svg></a>
+     
+      </div>
+      <div class="mt-10 max-w-2xl max-auto py-4 flex flex-wrap items-center justify-center mx-50 sm:mt-0 rounded-2xl border border-blue-500 shadow md:flex md:items-center md:justify-between md:p-6 bg-transparent">
+        <p
+          class="text-sky-950"
+        >
+          What services does ProHealth offer?
+        </p>
+        <a
+                href="#"
+                class="mr-4 text-sm  md:mr-6 "
+                ><svg class="rounded-full bg-transparent border border-blue-500 fill-blue-500 p-1" xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 384 512">
+                 <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+                </svg></a>
+     
+      </div>
+      <div class="mt-10 max-w-2xl max-auto py-4 flex flex-wrap items-center justify-center mx-50 sm:mt-0 rounded-2xl border border-blue-500 shadow md:flex md:items-center md:justify-between md:p-6 bg-transparent">
+        <p
+          class="text-sky-950"
+        >
+          What services does ProHealth offer?
+        </p>
+        <a
+                href="#"
+                class="mr-4 text-sm  md:mr-6 "
+                ><svg class="rounded-full bg-transparent border border-blue-500 fill-blue-500 p-1" xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 384 512">
+                 <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+                </svg></a>
+     
       </div>
     </div>
 
     <!-- FAQ section -->
+
+    <!-- Partners section -->
+    <div class="grid grid-cols-4 gap-5 ml-5 mt-20 mr-10 bg-none">
+      <div>
+        <img
+          class="opacity-45 hover:opacity-100 bg-none"
+          src="../../assets/images/d692fe88-a6e4-4574-b344-fe4694adc474.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="opacity-45 hover:opacity-100"
+          src="../../assets/images/143794184_f8641a6e-629f-4079-b89e-77a867952e09.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="opacity-45 hover:opacity-100"
+          src="../../assets/images/d692fe88-a6e4-4574-b344-fe4694adc474.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="opacity-45 hover:opacity-100"
+          src="../../assets/images/143794184_f8641a6e-629f-4079-b89e-77a867952e09.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="opacity-45 hover:opacity-100"
+          src="../../assets/images/143794184_f8641a6e-629f-4079-b89e-77a867952e09.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="opacity-45 hover:opacity-100"
+          src="../../assets/images/d692fe88-a6e4-4574-b344-fe4694adc474.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="opacity-45 hover:opacity-100"
+          src="../../assets/images/143794184_f8641a6e-629f-4079-b89e-77a867952e09.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="opacity-45 hover:opacity-100"
+          src="../../assets/images/d692fe88-a6e4-4574-b344-fe4694adc474.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- Partners section -->
+
+    <!-- Footer's section -->
+    <div class="bg-blue-300 rounded-lg">
+      <!-- relative w-384 h-231 after:absolute l-0 w-100% h-100% bg-inherit origin-[100%_0] -skew-y-20 before:skew-y-20 absolute l-0 w-100% h-100% bg-inherit origin-[100%_0] -->
+      <!-- w-100 h-350 skew-y-20 skew-x-20 -->
+      <div class="grid grid-cols-4 gap-5 ml-3 mt-20 mr-5 text-sky-950 py-5">
+        <div class="grid grid-rows-4 gap-1 m-10">
+          <h3 class="font-semibold">
+            ProHealth Medical & <br />
+            Healthcare Center
+          </h3>
+          <a
+            href="#"
+            class="mt-10 -ml-2 inline-flex items-start justify-start py-2 hover:text-blue-900 hover:font-semibold hover:underline hover:fill-white focus:ring-transparent focus:ring-blue-300"
+          >
+            <svg
+              class="fill-blue-500 rounded-lg"
+              xmlns="http://www.w3.org/2000/svg"
+              height="20"
+              width="30"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+              />
+            </svg>
+            <span class="indent-3 hover:transition duartion-700 ease-in-out">
+              123 Anywhere St. Any City 12345</span
+            >
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-start justify-start hover:text-blue-900 hover:font-semibold hover:underline hover:fill-white focus:ring-transparent focus:ring-blue-300"
+          >
+            <svg
+              class="fill-blue-500 rounded-lg"
+              xmlns="http://www.w3.org/2000/svg"
+              height="20"
+              width="20"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+              />
+            </svg>
+            <span class="indent-3 hover:transition duartion-700 ease-in-out"> 123-456-7890</span>
+          </a>
+
+          <a
+            href="#"
+            class="-mt-12 inline-flex items-start justify-start hover:text-blue-900 hover:font-semibold hover:underline hover:fill-white focus:ring-transparent focus:ring-blue-300"
+          >
+            <svg
+              class="fill-blue-500 rounded-lg"
+              xmlns="http://www.w3.org/2000/svg"
+              height="20"
+              width="20"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+              />
+            </svg>
+            <span class="indent-3 hover:transition duartion-700 ease-in-out">
+              123 Anywhere St. Any City 12345</span
+            >
+          </a>
+        </div>
+        <div class="grid grid-rows-7 gap-0.5 py-10">
+          <a href="" class="hover:text-blue-900 hover:font-semibold">About Us</a>
+          <a href="" class="hover:text-blue-900 hover:font-semibold">Departments</a>
+          <a href="" class="hover:text-blue-900 hover:font-semibold">Doctors</a>
+          <a href="" class="hover:text-blue-900 hover:font-semibold">Timetable</a>
+          <a href="" class="hover:text-blue-900 hover:font-semibold">Appointment</a>
+          <a href="" class="hover:text-blue-900 hover:font-semibold">Testimonials</a>
+        </div>
+        <div class="grid grid-rows-7 gap-0.5 py-10">
+          <a href="" class="hover:text-blue-900 hover:font-semibold">Blog</a>
+          <a href="" class="hover:text-blue-900 hover:font-semibold">Contact Us</a>
+          <a href="" class="hover:text-blue-900 hover:font-semibold">FAQs</a>
+          <a href="" class="hover:text-blue-900 hover:font-semibold">Privacy Policy</a>
+          <a href="" class="hover:text-blue-900 hover:font-semibold">Terms and Conditions</a>
+        </div>
+        <div class="grid grid-rows-3 gap-0.5 py-10">
+          <h2 class="font-bold text-2xl py-5">Be Our Subscribers</h2>
+          <p class="-mt-12">to get the latest news about health from our experts</p>
+          <form class="-mt-20">
+            <label for="default-search" class="mb-2 text-sm sr-only">Search</label>
+            <div class="relative">
+              <div
+                class="flex absolute inset-y-0 left-0 items-center pl-2 pointer-events-none"
+              ></div>
+              <input
+                type="search"
+                id="default-search"
+                class="block p-4 pl-10 w-full text-blue-500 text-sm bg-transparent rounded-full border border-black"
+                placeholder="example@email.com"
+                required
+              />
+              <button
+                type="submit"
+                class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      
+      </div>
+      <footer class="max-w-8xl mx-auto px-4 shadow md:flex md:items-center md:justify-between md:p-6 bg-blue-500">
+        <ul class="flex flex-wrap items-center mt-3 sm:mt-0">
+            <li>
+              <a
+                href="#"
+                class="mr-4 text-sm text-white hover:text-sky-950 md:mr-6 "
+                >Follow Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="ml-2 text-sm text-white hover:underline fill-white  hover:fill-sky-950 md:mr-6 "
+                > <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0,0,256,256"
+                  width="30px"
+                  height="30px"
+                >
+                  <g
+                 
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal"
+                  >
+                    <g transform="scale(5.12,5.12)">
+                      <path
+                        d="M25,2c-12.6907,0 -23,10.3093 -23,23c0,12.69071 10.3093,23 23,23c12.69071,0 23,-10.30929 23,-23c0,-12.6907 -10.30929,-23 -23,-23zM25,4c11.60982,0 21,9.39018 21,21c0,11.60982 -9.39018,21 -21,21c-11.60982,0 -21,-9.39018 -21,-21c0,-11.60982 9.39018,-21 21,-21zM16,12c-1.64501,0 -3,1.35499 -3,3c0,1.64501 1.35499,3 3,3c1.64501,0 3,-1.35499 3,-3c0,-1.64501 -1.35499,-3 -3,-3zM16,14c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1zM14,19c-0.55226,0.00006 -0.99994,0.44774 -1,1v15c0.00006,0.55226 0.44774,0.99994 1,1h4c0.55226,-0.00006 0.99994,-0.44774 1,-1v-15c-0.00006,-0.55226 -0.44774,-0.99994 -1,-1zM22,19c-0.55226,0.00006 -0.99994,0.44774 -1,1v15c0.00006,0.55226 0.44774,0.99994 1,1h4c0.55226,-0.00006 0.99994,-0.44774 1,-1v-7.5c0,-1.37955 1.12045,-2.5 2.5,-2.5c1.37955,0 2.5,1.12045 2.5,2.5v2.5v5c0.00006,0.55226 0.44774,0.99994 1,1h4c0.55226,-0.00006 0.99994,-0.44774 1,-1v-8.5c0,-4.13039 -3.36961,-7.5 -7.5,-7.5c-1.28647,0 -2.44026,0.41615 -3.5,0.99023c-0.00541,-0.54844 -0.45153,-0.99021 -1,-0.99023zM15,21h2v13h-2zM23,21h2v0.81641c0.00005,0.40093 0.23954,0.76309 0.60845,0.9201c0.36891,0.15701 0.79594,0.07853 1.08491,-0.19939c0.99083,-0.9518 2.32332,-1.53711 3.80664,-1.53711c3.04961,0 5.5,2.45039 5.5,5.5v7.5h-2v-4v-2.5c0,-2.47046 -2.02954,-4.5 -4.5,-4.5c-2.47046,0 -4.5,2.02954 -4.5,4.5v6.5h-2z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg></a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="ml-2 text-sm text-white hover:underline fill-white hover:fill-sky-950 md:mr-6 "
+                >  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0,0,256,256"
+                  width="30px"
+                  height="30px"
+                >
+                  <g
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal"
+                  >
+                    <g transform="scale(5.12,5.12)">
+                      <path
+                        d="M25,2c-12.6907,0 -23,10.3093 -23,23c0,12.69071 10.3093,23 23,23c12.69071,0 23,-10.30929 23,-23c0,-12.6907 -10.30929,-23 -23,-23zM25,4c11.60982,0 21,9.39018 21,21c0,11.60982 -9.39018,21 -21,21c-11.60982,0 -21,-9.39018 -21,-21c0,-11.60982 9.39018,-21 21,-21zM30.69336,14.05859c-3.60031,0 -6.54102,2.93958 -6.54102,6.53906c0,0.0253 0.00751,0.04896 0.00781,0.07422c-3.81409,-0.50757 -7.18808,-2.39053 -9.50586,-5.23242c-0.20741,-0.254 -0.52616,-0.39018 -0.85308,-0.36447c-0.32692,0.02572 -0.62045,0.21007 -0.7856,0.49337c-0.56289,0.96765 -0.88477,2.09541 -0.88477,3.28906c0,1.06217 0.2959,2.0489 0.74805,2.93945c-0.46159,0.09772 -0.79209,0.50475 -0.79297,0.97656v0.07031c0,1.93403 0.90503,3.60904 2.24609,4.80859c-0.27505,0.26429 -0.37581,0.66202 -0.25976,1.02539c0.55844,1.73693 1.86014,3.09674 3.49023,3.86328c-1.30409,0.60998 -2.70141,1.04688 -4.24219,1.04688c-0.4108,0 -0.81012,-0.02335 -1.20117,-0.07031c-0.46347,-0.05613 -0.90412,0.21586 -1.06168,0.65533c-0.15755,0.43947 0.00991,0.92948 0.40347,1.18061c2.60447,1.6711 5.70586,2.64648 9.0293,2.64648c5.37065,0 9.61567,-2.25613 12.45313,-5.47461c2.83745,-3.21848 4.31055,-7.37231 4.31055,-11.28516c0,-0.11751 -0.00541,-0.22994 -0.00781,-0.3457c0.97384,-0.78179 1.88973,-1.64409 2.58398,-2.68359c0.23504,-0.35175 0.22334,-0.81333 -0.02923,-1.15271c-0.25256,-0.33938 -0.69135,-0.48314 -1.09577,-0.35901c0.16163,-0.31458 0.39041,-0.58769 0.5,-0.92969c0.12647,-0.39526 -0.0043,-0.82756 -0.32866,-1.08644c-0.32436,-0.25888 -0.7749,-0.29054 -1.13228,-0.07957c-0.87459,0.51821 -1.8573,0.85987 -2.875,1.09766c-1.14337,-0.97415 -2.56385,-1.64258 -4.17578,-1.64258zM30.69336,16.05859c1.31219,0 2.48496,0.54839 3.3125,1.43164c0.23529,0.25178 0.58362,0.3647 0.92188,0.29883c0.15192,-0.02988 0.27395,-0.12662 0.42383,-0.16211c-0.0186,0.01151 -0.03005,0.03172 -0.04883,0.04297c-0.38766,0.23275 -0.57093,0.69665 -0.44701,1.13151c0.12392,0.43485 0.52419,0.73247 0.97631,0.72591c-0.06869,0.05238 -0.1097,0.13498 -0.17969,0.18555c-0.27276,0.19678 -0.42834,0.51748 -0.41406,0.85352c0.0095,0.22425 0.01563,0.44943 0.01563,0.67383c0,3.40515 -1.31425,7.13137 -3.81055,9.96289c-2.4963,2.83152 -6.13477,4.79688 -10.95312,4.79688c-1.65319,0 -3.20853,-0.33031 -4.68945,-0.83203c1.84226,-0.39035 3.58646,-1.04277 5.01563,-2.16406c0.33139,-0.26134 0.46306,-0.70258 0.32907,-1.10279c-0.13399,-0.40021 -0.50478,-0.67323 -0.92673,-0.68236c-1.41565,-0.02571 -2.50594,-0.82641 -3.32031,-1.85937c0.29918,-0.03871 0.60861,-0.0401 0.89453,-0.11914c0.44721,-0.12249 0.75157,-0.5363 0.73529,-0.9997c-0.01628,-0.46339 -0.34895,-0.85482 -0.80365,-0.94562c-1.65141,-0.33328 -2.93961,-1.57189 -3.41211,-3.17383c0.4253,0.10235 0.79795,0.33128 1.25,0.3457c0.44561,0.01365 0.84644,-0.2693 0.98279,-0.69376c0.13635,-0.42445 -0.02471,-0.8879 -0.3949,-1.13632c-1.21974,-0.81562 -2.01953,-2.19701 -2.01953,-3.7793c0,-0.327 0.17547,-0.5869 0.24024,-0.89258c2.8405,2.81186 6.62074,4.67806 10.87695,4.89258c0.31404,0.01574 0.6172,-0.11713 0.81846,-0.35872c0.20126,-0.24159 0.27718,-0.56376 0.20497,-0.8698c-0.07783,-0.32915 -0.11914,-0.67252 -0.11914,-1.03125c0,-2.51852 2.02132,-4.53906 4.54102,-4.53906z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg></a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-sm text-white hover:underline fill-white hover:fill-sky-950 ml-2 mr-2 "
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0,0,256,256"
+                  width="30px"
+                  height="30px"
+                >
+                  <g
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal"
+                  >
+                    <g transform="scale(5.12,5.12)">
+                      <path
+                        d="M25,2c-12.6907,0 -23,10.3093 -23,23c0,12.69071 10.3093,23 23,23c12.69071,0 23,-10.30929 23,-23c0,-12.6907 -10.30929,-23 -23,-23zM25,4c11.60982,0 21,9.39018 21,21c0,11.60982 -9.39018,21 -21,21c-11.60982,0 -21,-9.39018 -21,-21c0,-11.60982 9.39018,-21 21,-21zM30.69336,14.05859c-3.60031,0 -6.54102,2.93958 -6.54102,6.53906c0,0.0253 0.00751,0.04896 0.00781,0.07422c-3.81409,-0.50757 -7.18808,-2.39053 -9.50586,-5.23242c-0.20741,-0.254 -0.52616,-0.39018 -0.85308,-0.36447c-0.32692,0.02572 -0.62045,0.21007 -0.7856,0.49337c-0.56289,0.96765 -0.88477,2.09541 -0.88477,3.28906c0,1.06217 0.2959,2.0489 0.74805,2.93945c-0.46159,0.09772 -0.79209,0.50475 -0.79297,0.97656v0.07031c0,1.93403 0.90503,3.60904 2.24609,4.80859c-0.27505,0.26429 -0.37581,0.66202 -0.25976,1.02539c0.55844,1.73693 1.86014,3.09674 3.49023,3.86328c-1.30409,0.60998 -2.70141,1.04688 -4.24219,1.04688c-0.4108,0 -0.81012,-0.02335 -1.20117,-0.07031c-0.46347,-0.05613 -0.90412,0.21586 -1.06168,0.65533c-0.15755,0.43947 0.00991,0.92948 0.40347,1.18061c2.60447,1.6711 5.70586,2.64648 9.0293,2.64648c5.37065,0 9.61567,-2.25613 12.45313,-5.47461c2.83745,-3.21848 4.31055,-7.37231 4.31055,-11.28516c0,-0.11751 -0.00541,-0.22994 -0.00781,-0.3457c0.97384,-0.78179 1.88973,-1.64409 2.58398,-2.68359c0.23504,-0.35175 0.22334,-0.81333 -0.02923,-1.15271c-0.25256,-0.33938 -0.69135,-0.48314 -1.09577,-0.35901c0.16163,-0.31458 0.39041,-0.58769 0.5,-0.92969c0.12647,-0.39526 -0.0043,-0.82756 -0.32866,-1.08644c-0.32436,-0.25888 -0.7749,-0.29054 -1.13228,-0.07957c-0.87459,0.51821 -1.8573,0.85987 -2.875,1.09766c-1.14337,-0.97415 -2.56385,-1.64258 -4.17578,-1.64258zM30.69336,16.05859c1.31219,0 2.48496,0.54839 3.3125,1.43164c0.23529,0.25178 0.58362,0.3647 0.92188,0.29883c0.15192,-0.02988 0.27395,-0.12662 0.42383,-0.16211c-0.0186,0.01151 -0.03005,0.03172 -0.04883,0.04297c-0.38766,0.23275 -0.57093,0.69665 -0.44701,1.13151c0.12392,0.43485 0.52419,0.73247 0.97631,0.72591c-0.06869,0.05238 -0.1097,0.13498 -0.17969,0.18555c-0.27276,0.19678 -0.42834,0.51748 -0.41406,0.85352c0.0095,0.22425 0.01563,0.44943 0.01563,0.67383c0,3.40515 -1.31425,7.13137 -3.81055,9.96289c-2.4963,2.83152 -6.13477,4.79688 -10.95312,4.79688c-1.65319,0 -3.20853,-0.33031 -4.68945,-0.83203c1.84226,-0.39035 3.58646,-1.04277 5.01563,-2.16406c0.33139,-0.26134 0.46306,-0.70258 0.32907,-1.10279c-0.13399,-0.40021 -0.50478,-0.67323 -0.92673,-0.68236c-1.41565,-0.02571 -2.50594,-0.82641 -3.32031,-1.85937c0.29918,-0.03871 0.60861,-0.0401 0.89453,-0.11914c0.44721,-0.12249 0.75157,-0.5363 0.73529,-0.9997c-0.01628,-0.46339 -0.34895,-0.85482 -0.80365,-0.94562c-1.65141,-0.33328 -2.93961,-1.57189 -3.41211,-3.17383c0.4253,0.10235 0.79795,0.33128 1.25,0.3457c0.44561,0.01365 0.84644,-0.2693 0.98279,-0.69376c0.13635,-0.42445 -0.02471,-0.8879 -0.3949,-1.13632c-1.21974,-0.81562 -2.01953,-2.19701 -2.01953,-3.7793c0,-0.327 0.17547,-0.5869 0.24024,-0.89258c2.8405,2.81186 6.62074,4.67806 10.87695,4.89258c0.31404,0.01574 0.6172,-0.11713 0.81846,-0.35872c0.20126,-0.24159 0.27718,-0.56376 0.20497,-0.8698c-0.07783,-0.32915 -0.11914,-0.67252 -0.11914,-1.03125c0,-2.51852 2.02132,-4.53906 4.54102,-4.53906z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg></a
+              >
+            </li>
+          </ul>
+          <span class="text-sm text-white sm:text-center"
+            >© 2022
+            <a href="https://flowbite.com" class="hover:underline" target="_blank">ProHealth™</a>.
+            All Rights Reserved.
+          </span>
+          
+        </footer>
+    </div>
+    <!-- Footer's section -->
   </section>
 </template>
