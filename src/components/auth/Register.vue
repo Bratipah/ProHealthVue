@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col md:flex-row h-screen items-center">
-    <div class=" bg-indigo-600 hidden lg:block w-full md:w-1/2 xl:w-2/4 h-screen">
-      <img  src="../../assets/images/about.jpg" alt="" class="object-cover h-full w-full" />
+    <div class="bg-indigo-600 hidden lg:block w-full md:w-1/2 xl:w-2/4 h-screen">
+      <img src="../../assets/images/about.jpg" alt="" class="object-cover h-full w-full" />
     </div>
 
     <div
@@ -22,6 +22,19 @@
               class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"
               autofocus
               autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="mt-4">
+            <label class="block text-gray-700">Full Names</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              v-model="name"
+              placeholder="Enter Full Names"
+              class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"
               required
             />
           </div>
@@ -124,8 +137,8 @@ export default {
     const error = ref(null)
 
     const store = useStore()
-    
-    console.log(store.state.user);
+
+    console.log(store.state.user)
     const router = useRouter()
 
     const Register = async () => {
@@ -134,14 +147,13 @@ export default {
           email: email.value,
           password: password.value,
           name: name.value
-          
         })
         router.push('/login')
       } catch (err) {
         err.value = err.message
       }
     }
-   
+
     return { Register, name, email, password, error }
   }
 }
