@@ -34,25 +34,61 @@
     <div class="menu w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8">
       <div class="text-md font-normal text-black-200 lg:flex-grow">
         <a
-          href="#responsive-header"
+          href="#values"
           class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-900 px-4 hover:font-semibold"
         >
           About
         </a>
         <a
-          href="#responsive-header"
+          href="#departments"
+          class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-900 px-4 hover:font-semibold"
+        >
+          Departments
+        </a>
+        <a
+          href="#awards"
+          class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-900 px-4 hover:font-semibold"
+        >
+          Awards
+        </a>
+        <a
+          href="#reviews"
+          class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-900 px-4 hover:font-semibold"
+        >
+         Reviews
+        </a>
+        <a
+          href="#appointment"
           class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-900 px-4 hover:font-semibold"
         >
           Find Doctor
         </a>
         <a
-          href="#responsive-header"
+          href="#cta"
+          class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-900 px-4 hover:font-semibold"
+        >
+          Call To Action
+        </a>
+        <a
+          href="#blog"
           class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-900 px-4 hover:font-semibold"
         >
           Blog
         </a>
         <a
-          href="#responsive-header"
+          href="#faq"
+          class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-900 px-4 hover:font-semibold"
+        >
+         FAQs
+        </a>
+        <a
+          href="#partners"
+          class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-900 px-4 hover:font-semibold"
+        >
+          Partners
+        </a>
+        <a
+          href="#footer"
           class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-900 px-4 hover:font-semibold"
         >
           Contact
@@ -60,61 +96,17 @@
       </div>
 <!-- Navbar end icons -->
       <div class="hidden xl:flex items-center space-x-6 items-center">
-        <a class="hover:text-gray-200 hover:fill-blue-900" href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-            />
-          </svg>
-        </a>
-        <a class="flex items-center hover:text-gray-200 hover:fill-blue-900" href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-            />
-          </svg>
-          <span class="flex absolute -mt-5 ml-4">
-            <span
-              class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"
-            ></span>
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500"> </span>
-          </span>
-        </a>
         <!-- Sign In / Register      -->
-        <a class="flex items-center hover:text-gray-200" href="#">
-          <svg
-          class="h-6 w-6 hover:text-gray-200 hover:fill-blue-900" 
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-            />
-          </svg>
-        </a>
+        <div v-if="user" class="flex">
+          <p class="text-blue-900 font-semibold mt-2"> Welcome,  {{user.name}}</p>
+          <button  @click.prevent="signOut" class=" ml-5 btn btn-primary items-center hover:text-blue-900 hover:text-bold bg-blue-700 hover:bg-white px-4 py-1.5 rounded-lg text-white text-center">Log Out</button>
+
+        </div>
+        <div  v-if="!user">
+          <router-link  class="flex items-center hover:text-blue-900  bg-blue-900 hover:bg-white px-4 py-2 rounded-lg text-white text-center" to="/login"> Sign In </router-link>
+        </div>
+       
+        <!-- <router-view></router-view> -->
       </div>
       <!-- Responsive navbar -->
       <a class="xl:hidden flex mr-6 items-center" href="#">
@@ -159,5 +151,42 @@
       </a>
     </div>
   </nav>
+  <Homepage />
 </section>
 </template>
+
+
+<script>
+import { useStore} from "vuex";
+// import { useRouter } from "vue-router";
+import {computed} from "vue";
+
+
+export default {
+  name: "DashboardComponent",
+
+  setup() {
+
+  const store = useStore()
+  // const router = useRouter()
+    
+  const signOut = async () => {
+        await store.dispatch('logOut')
+        // router.push('/')
+  }
+    return {
+      signOut,     
+      user: computed(() => store.state.user),
+      authIsReady: computed(()=> store.state.authIsReady)
+    }
+
+ 
+
+ 
+
+ }
+
+
+
+};
+</script>
