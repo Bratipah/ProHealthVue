@@ -1,3 +1,73 @@
+<script>
+// import Maps from '../googlemaps/mapView.vue';
+import {onMounted, ref } from 'vue';
+
+export default{
+  // components: Maps,
+  setup(){
+     // Setting the default coordinates to London
+     const coords = ref({ lat: -1.266944, lng: 36.811667 })
+    // Marker Details
+    const markerDetails = ref({
+      id: 1,
+      position: coords.value,
+      title:"AfyaRekod Campus"
+    })
+    const openedMarkerID = ref(null)
+
+    // Places Details
+    const locationDetails = ref({
+      address: '',
+      url: ''
+    })
+
+    // Get users current location using the browser's geolocation API
+    const getUserLocation = () => {
+      // Check if Geolocation is supported by the browser
+      const isSupported = 'navigator' in window && 'geolocation' in navigator
+      if (isSupported) {
+        // Retrieve the user's current position
+        navigator.geolocation.getCurrentPosition((position) => {
+          coords.value.lat = position.coords.latitude
+          coords.value.lng = position.coords.longitude
+        })
+      }
+    }
+
+    // Set the location based on the place selected
+    const setPlace = (place) => {
+      coords.value.lat = place.geometry.location.lat()
+      coords.value.lng = place.geometry.location.lng()
+
+      // Update the location details
+      locationDetails.value.address = place.formatted_address
+      locationDetails.value.url = place.url
+    }
+
+    // Open the marker info window
+    const openMarker = (id) => {
+      openedMarkerID.value = id
+    }
+
+    onMounted(() => {
+      getUserLocation()
+    })
+
+    return {
+      coords,
+      markerDetails,
+      openedMarkerID,
+      openMarker,
+      getUserLocation,
+      setPlace,
+      locationDetails
+    }
+  }
+}
+
+</script>
+
+
 <template  class="bg-cyan-200">
   <section class="bg-sky-200">
     <!-- Landing Page & Navbar -->
@@ -95,7 +165,7 @@
             class="absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 bg-gray-300 border border-gray-400 transition delay-75 ease-in-out z-10"
           >
             <ul class="block text-right text-gray-900">
-              <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">labaratory</a></li>
+              <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">Labaratory</a></li>
               <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">Physiotheraphy</a></li>
               <li>
                 <a href="#" class="block px-3 py-2 hover:bg-gray-200">Gnaecology</a>
@@ -126,8 +196,10 @@
 
       <div class="md:w-2/12">
         <button
-          class="rounded-2xl bg-gradient-to-r from-sky-700 to-sky-950 text-white px-5 py-2 mt-2 transition duration-0 hover:duration-700 ease-in-out"
-        >
+        
+        data-modal-toggle="crud-modal"
+          type="button"
+          class="rounded-2xl bg-gradient-to-r from-sky-700 to-sky-950 text-white px-5 py-2 mt-2 transition duration-0 hover:duration-700 ease-in-out">
           Book Now
         </button>
       </div>
@@ -1173,6 +1245,67 @@
     </div>
     <!-- Partners section -->
 
+    <!-- Maps Section -->
+  <div class="m-20" >
+    <!-- input search box for google places autocomplete -->
+    <!-- <div class="search-box">
+      <GMapAutocomplete
+        placeholder="Search for a location"
+        @place_changed="setPlace"
+        style="font-size: medium"
+      >
+      </GMapAutocomplete>
+    </div> -->
+
+    <!-- rendering the map on the page -->
+    <GMapMap :center="coords" :zoom="15" map-type-id="terrain" style="width: 92vw; height: 40rem">
+
+      <!-- Marker to display the searched location -->
+      <GMapMarker
+        :key="markerDetails.id"
+        :position="markerDetails.position"
+        :clickable="true"
+        :draggable="false"
+        @click="openMarker(markerDetails.id)"
+      >
+        <!-- InfoWindow to display the searched location details -->
+          <!-- <GMapInfoWindow
+            v-if="locationDetails.address != ''"
+            :closeclick="true"
+            @closeclick="openMarker(null)"
+            :opened="openedMarkerID === markerDetails.id"
+            :options="{
+              pixelOffset: {
+                width: 10,
+                height: 0
+              },
+              maxWidth: 320,
+              maxHeight: 320
+            }"
+           
+          >
+            <div class="location-details">
+              <h3>Location Details</h3>
+              <p>Address: {{ locationDetails.address }}</p>
+              <p>
+                URL: <a :href="locationDetails.url" target="_blank"> {{ locationDetails.url }}</a>
+              </p>
+            </div>
+          </GMapInfoWindow> -->
+          
+      </GMapMarker>
+
+    </GMapMap>
+  </div>
+
+
+
+
+
+
+
+    <!-- Maps Section -->
+
     <!-- Footer's section -->
     <div class="bg-blue-300 rounded-lg" id="footer">
       <!-- relative w-384 h-231 after:absolute l-0 w-100% h-100% bg-inherit origin-[100%_0] -skew-y-20 before:skew-y-20 absolute l-0 w-100% h-100% bg-inherit origin-[100%_0] -->
@@ -1406,5 +1539,17 @@
   </section>
 </template>
 
-
-
+<style scoped>
+.search-box {
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.location-details {
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+}
+</style>
+../googlemaps/mapView.vue
